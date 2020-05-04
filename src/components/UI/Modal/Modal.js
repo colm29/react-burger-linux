@@ -13,6 +13,10 @@ class Modal extends Component {
         console.log('[Modal] Updated')
     }
 
+    errorConfirmedHandler = () => {
+        this.setState({error: null})
+    }
+
 
     render () {
         return (
