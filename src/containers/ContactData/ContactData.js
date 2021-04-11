@@ -57,7 +57,7 @@ class ContactData extends Component {
                             {value: 'cheapest', displayValue: 'Cheapest'}
                         ]
                     },
-                    value: ''
+                    value: 'jj'
                 },
         }
     }
@@ -96,7 +96,7 @@ class ContactData extends Component {
                     {formElementsArray.map(formElement => (
                         <Input
                             key={formElement.id}
-                            elementType={formElement.elementType}
+                            elementType={formElement.config.elementType}
                             elementConfig={formElement.config.elementConfig}
                             value={formElement.config.value} />
                     ))}
